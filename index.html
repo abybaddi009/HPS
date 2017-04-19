@@ -1,26 +1,203 @@
-<!DOCTYPE html><html lang="en"> <head>  <meta charset="utf-8">  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Latest compiled and minified CSS -->  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  <title>HPS</title> </head> <body>  <nav class="navbar navbar-default" style="margin-bottom: 0px">   <div class="container">   <!-- Brand and toggle get grouped for better mobile display -->   <div class="navbar-header">     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">    <span class="sr-only">Toggle navigation</span>    <span class="icon-bar"></span>    <span class="icon-bar"></span>    <span class="icon-bar"></span>     </button>     <a class="navbar-brand" href="/">⚕Global Health Plan Service</span></a>   </div>
-   <!-- Collect the nav links, forms, and other content for toggling -->   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     <ul class="nav navbar-nav">    <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>    <li><a href="#"></a></li>     </ul>          <ul class="nav navbar-nav navbar-right">    <li><p class="navbar-text">Contact Us: +1800 465 8899</p></li>    <li class="dropdown">      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cart"><span class="caret"></span></span></a>      <ul class="dropdown-menu">     <li><a href="#">No Items in your cart</a></li>      </ul>    </li>    <li class="dropdown">      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as Mark Otto <span class="caret"></span></a>      <ul class="dropdown-menu">     <li><a href="#">Agent Profile</a></li>     <li><a href="#">Member Information</a></li>     <li role="separator" class="divider"></li>     <li><a href="#">Logoff</a></li>      </ul>    </li>     </ul>   </div><!-- /.navbar-collapse -->   </div><!-- /.container-fluid -->  </nav>  <div class="jumbotron">   <div class="container">   <h1>Welcome to Health Plan Service!</h1>   <p>Ready to get a quote?...</p>   <p><a class="btn btn-primary btn-lg" href="#" role="button">Let's get started</a></p>   </div>  </div>  <div class="container">   <form>    <div class="row">     <div class="form-group col-md-2">      <label class="control-label">What Insurance do you need?</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Gender</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Zip Code:</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Birth Date:</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Qualifying Event:</label>     </div>    </div>    <div class="row">     <div class="form-group col-md-2">      <div class="input-group">       <span class="input-group-addon" id="basic-addon1">@</span>       <input type="text" name="ins_type" class="form-control" aria-describedby="basic-addon1"/>      </div>     </div>     <div class="form-group col-md-2">      <div class="radio">       <label class="radio-inline"><input type="radio" name="gRadio" />Male</label>       <label class="radio-inline"><input type="radio" name="gRadio" />Female</label>      </div>     </div>     <div class="form-group col-md-2">      <input type="text" name="zipCode" class="form-control"/>     </div>     <div class="form-group col-md-2">      <input type="text" name="birthDate" class="form-control" id="birthDate"/>     </div>     <div class="form-group col-md-2">      <select class="form-control" id="qualifying-events">       <option disabled="" class="hide" value="" selected="">Select..</option>       <option id="8" value="permanentMove"> Access to qualified health plan due to a permanent move </option>
-       <option id="5" value="adoption"> Adoption/foster care </option>
-       <option id="4" value="birth"> Birth </option>
-       <option id="7" value="courtOrderCoverage"> Court ordered coverage </option>
-       <option id="9" value="death"> Death of a policyholder/certificate holder </option>
-       <option id="11" value="dependent19-25"> Dependent 19-25 </option>
-       <option id="10" value="turning26"> Dependent turning 26 </option>
-       <option id="12" value="divorce"> Divorce/dissolution of domestic partnership </option>
-       <option id="3" value="partnership"> Domestic Partnership </option>
-       <option id="22" value="outsideRenewalDate"> Employer renewal date is outside of an annual open enrollment period for the Individual Health Plan Market </option>
-       <option id="13" value="exhaustionCobra"> Exhaustion of Cobra </option>
-       <option id="18" value="usCitizenship"> Gained U.S. Citizenship </option>
-       <option id="20" value="tribeMembership"> Gaining membership in federally recognized Tribe </option>
-       <option id="6" value="guardianship"> Legal guardianship </option>
-       <option id="14" value="lossMedicaid"> Loss of Medicaid or Hawk-I eligibility </option>
-       <option id="21" value="lossOfCoverage"> Loss of group coverage </option>
-       <option id="2" value="marriage"> Marriage, including common law </option>
-       <option id="1" value="subsidyEligible"> Newly eligible or ineligible for subsidy </option>
-       <option id="19" value="immigration"> Obtain Legal Immigration Status </option>
-       <option id="15" value="policyholderInMedicare"> Policyholder or certificate holder enrolls in Medicare </option>
-       <option id="17" value="militaryReturn"> Return from military service </option>
-       <option id="16" value="terminationEmployment"> Termination of employment or reduction in hours </option>      </select>     </div>    </div>    <div class="row">     <div class="form-group col-md-2">      <label class="control-label">First Name</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Last Name</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Phone Number</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Email</label>     </div>     <div class="form-group col-md-2">      <label class="control-label">Farm Bureau Plan</label>     </div>    </div>    <div class="row">     <div class="form-group col-md-2">      <input type="text" name="FirstName" class="form-control" id="FirstName"/>     </div>     <div class="form-group col-md-2">      <div class="radio">      <input type="text" name="LastName" class="form-control" id="LastName"/>      </div>     </div>     <div class="form-group col-md-2">      <input type="text" name="zipCode" class="form-control"/>     </div>     <div class="form-group col-md-2">      <div class="input-group">       <span class="input-group-addon" id="basic-addon1">@</span>       <input type="text" name="ins_type" class="form-control" aria-describedby="basic-addon1"/>      </div>     </div>     <div class="form-group col-md-2">      <select class="form-control" id="IFP-Select">       <option disabled="" class="hide" value="" selected="">Select..</option>       <option id="IFP_1" value="IFP"> Show IFP Plans </option>       <option id="IFP_0" value="NOIFP"> Don't Show IFP Plans </option>      </select>     </div>    </div>   </form>  </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<title>HPS</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" style="margin-bottom: 0px">
+			<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="/">⚕♥Global Health Plan Service</span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+				<li><a href="#"></a></li>
+			  </ul>
+			  
+			  <ul class="nav navbar-nav navbar-right">
+				<li><p class="navbar-text">Contact Us: +1800 465 8899</p></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cart"><span class="caret"></span></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">No Items in your cart</a></li>
+				  </ul>
+				</li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed in as Mark Otto <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Agent Profile</a></li>
+					<li><a href="#">Member Information</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Logoff</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="jumbotron">
+			<div class="container">
+			<h1>Welcome to Health Plan Service!</h1>
+			<p>Ready to get a quote?...</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Let's get started</a></p>
+			</div>
+		</div>
+		<div class="container">
+			<form>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">What Insurance do you need?</label>
+					</div>
+					<div class="form-group col-md-3">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="text" name="ins_type" class="form-control" aria-describedby="basic-addon1"/>
+						</div>
+					</div>
+					<div class="form-group col-md-2">
+						<label class="control-label">Gender</label>
+					</div>
+					<div class="form-group col-md-3">
+						<div class="radio">
+							<label class="radio-inline"><input type="radio" name="gRadio" />Male</label>
+							<label class="radio-inline"><input type="radio" name="gRadio" />Female</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">Zip Code:</label>
+					</div>
+					<div class="form-group col-md-3">
+						<input type="text" name="zipCode" class="form-control"/>
+					</div>
+					<div class="form-group col-md-2">
+						<label class="control-label">Birth Date:</label>
+					</div>
+					<div class="form-group col-md-3">
+						<input type="text" name="birthDate" class="form-control" id="birthDate"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">Qualifying Event:</label>
+					</div>
+					<div class="form-group col-md-3">
+						<select class="form-control" id="qualifying-events">
+							<option disabled="" class="hide" value="" selected="">Select..</option>
+							<option id="8" value="permanentMove"> Access to qualified health plan due to a permanent move </option>
+
+							<option id="5" value="adoption"> Adoption/foster care </option>
+
+							<option id="4" value="birth"> Birth </option>
+
+							<option id="7" value="courtOrderCoverage"> Court ordered coverage </option>
+
+							<option id="9" value="death"> Death of a policyholder/certificate holder </option>
+
+							<option id="11" value="dependent19-25"> Dependent 19-25 </option>
+
+							<option id="10" value="turning26"> Dependent turning 26 </option>
+
+							<option id="12" value="divorce"> Divorce/dissolution of domestic partnership </option>
+
+							<option id="3" value="partnership"> Domestic Partnership </option>
+
+							<option id="22" value="outsideRenewalDate"> Employer renewal date is outside of an annual open enrollment period for the Individual Health Plan Market </option>
+
+							<option id="13" value="exhaustionCobra"> Exhaustion of Cobra </option>
+
+							<option id="18" value="usCitizenship"> Gained U.S. Citizenship </option>
+
+							<option id="20" value="tribeMembership"> Gaining membership in federally recognized Tribe </option>
+
+							<option id="6" value="guardianship"> Legal guardianship </option>
+
+							<option id="14" value="lossMedicaid"> Loss of Medicaid or Hawk-I eligibility </option>
+
+							<option id="21" value="lossOfCoverage"> Loss of group coverage </option>
+
+							<option id="2" value="marriage"> Marriage, including common law </option>
+
+							<option id="1" value="subsidyEligible"> Newly eligible or ineligible for subsidy </option>
+
+							<option id="19" value="immigration"> Obtain Legal Immigration Status </option>
+
+							<option id="15" value="policyholderInMedicare"> Policyholder or certificate holder enrolls in Medicare </option>
+
+							<option id="17" value="militaryReturn"> Return from military service </option>
+
+							<option id="16" value="terminationEmployment"> Termination of employment or reduction in hours </option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">First Name</label>
+					</div>
+					<div class="form-group col-md-3">
+						<input type="text" name="FirstName" class="form-control" id="FirstName"/>
+					</div>
+					<div class="form-group col-md-2">
+						<label class="control-label">Last Name</label>
+					</div>
+					<div class="form-group col-md-3">
+						<input type="text" name="LastName" class="form-control" id="LastName"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">Phone Number</label>
+					</div>
+					<div class="form-group col-md-3">
+						<input type="text" name="phoneNumber" class="form-control"/>
+					</div>
+					<div class="form-group col-md-2">
+						<label class="control-label">Email</label>
+					</div>
+					<div class="form-group col-md-3">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">@</span>
+							<input type="text" name="ins_type" class="form-control" aria-describedby="basic-addon1"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-2 col-md-offset-1">
+						<label class="control-label">Farm Bureau Plan</label>
+					</div>
+					<div class="form-group col-md-2">
+						<select class="form-control" id="IFP-Select">
+							<option disabled="" class="hide" value="" selected="">Select..</option>
+							<option id="IFP_1" value="IFP"> Show IFP Plans </option>
+							<option id="IFP_0" value="NOIFP"> Don't Show IFP Plans </option>
+						</select>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
